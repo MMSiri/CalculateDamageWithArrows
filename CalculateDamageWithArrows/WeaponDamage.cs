@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CalculateDamageWithArrows
 {
-    class WeaponDamage
+    abstract class WeaponDamage
     {
         private int roll;
 
@@ -38,11 +38,7 @@ namespace CalculateDamageWithArrows
             CalculateDamage();
         }
 
-        protected virtual void CalculateDamage()
-        {
-            //Subclasses override this
-            Console.WriteLine("Such meine dich if you can read dis.");
-        }
+        protected abstract void CalculateDamage();
     }
 
     }
